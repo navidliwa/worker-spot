@@ -1,0 +1,24 @@
+{
+  "name": "worker-spot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navidliwa/worker-spot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/navidliwa/worker-spot/issues"
+  },
+  "homepage": "https://github.com/navidliwa/worker-spot#readme"
+}
