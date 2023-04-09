@@ -22,7 +22,6 @@ function start() {
                 "Add a department",
                 "Add a role",
                 "Add an employee",
-                "Update a department",
                 "Update an employee role",
                 "Exit",
             ],
@@ -45,9 +44,6 @@ function start() {
                     break;
                 case "Add an employee":
                     addEmployee();
-                    break;
-                case "Update a department":
-                    updateDepartment();
                     break;
                 case "Update an employee role":
                     updateEmployeeRole();
@@ -96,6 +92,23 @@ const viewEmployee = () => {
         console.table(res);
         start();
     });
+};
+
+const addDepartment = () => {
+    {
+        inquirer.prompt([
+            {
+                name: "departmentName",
+                type: "input",
+                message: "What will the new department be named?"
+            },
+        ]).then(function (answer) {
+            connection.query("INSERT INTO department SET ?", {
+                name: answer.departmentName
+            }),
+                start();
+        });
+    };
 };
 
 const addRole = () => {
