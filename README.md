@@ -35,6 +35,7 @@ After installed open up a terminal from the root folder of this project and invo
 - Add an employee
 - Update an employee role
 - Exit
+
 Depending on your selection, the command will prompt you for any necessary information and use it to execute the selected command.
 
 ## License
